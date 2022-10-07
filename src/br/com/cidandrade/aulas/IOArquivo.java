@@ -18,7 +18,7 @@ public class IOArquivo {
     public static void modoArquivo(String nomeASerInserido, Byte idadeASerInserida,
             Float alturaASerInserida) {
 //        precisei alterar o caminho do arquivo para ser criado no diretorio do 
-//        programa já que não tinha a pasta tmp
+//        programa já que não tinha a pasta tmp, o que ocasionava um erro
         nomeArquivo = "testeJava.txt";
         arquivo = new File(nomeArquivo);
         try {
