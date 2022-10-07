@@ -2,4 +2,4 @@ Versão modificada do código onde é possível criar um arquivo utilizando as i
 
 <!-- ![Funcionamento do Programa](./readmeImgs/funcionamento.gif) -->
 
-<img src="./readmeImgs/funcionamento.gif" alt="Funcionamento do Programa" width="525" height="360" />
+<img src="./readmeImgs/funcionamento.gif" alt="Funcionamento do Programa" width="650" height="450" />
