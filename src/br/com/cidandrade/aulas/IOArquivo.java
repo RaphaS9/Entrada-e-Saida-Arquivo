@@ -12,10 +12,13 @@ import java.util.Scanner;
  */
 public class IOArquivo {
     
-    static String nomeArquivo;
-    static File arquivo;
+    private static String nomeArquivo;
+    private static File arquivo;
     
-    public static void modoArquivo(String nomeASerInserido, Byte idadeASerInserida, Float alturaASerInserida) {
+    public static void modoArquivo(String nomeASerInserido, Byte idadeASerInserida,
+            Float alturaASerInserida) {
+//        precisei alterar o caminho do arquivo para ser criado no diretorio do 
+//        programa já que não tinha a pasta tmp
         nomeArquivo = "testeJava.txt";
         arquivo = new File(nomeArquivo);
         try {
@@ -35,12 +38,14 @@ public class IOArquivo {
                         nome, idade, altura));
             }
         } catch (IOException ex) {
-            Mensagem.mensagemDeErro("Erro na criação do arquivo " + ex.getLocalizedMessage());
+            Mensagem.mensagemDeErro("Erro na criação do arquivo " +
+                    ex.getLocalizedMessage());
         }
     }
     
     public static void abrirArquivo() {
-        if (!Desktop.isDesktopSupported())//check if Desktop is supported by Platform or not  
+        //check if Desktop is supported by Platform or not 
+        if (!Desktop.isDesktopSupported())
         {
             Mensagem.mensagemDeErro("Não suportado pela plataforma");
         }
